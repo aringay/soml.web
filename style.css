@@ -211,7 +211,7 @@ footer {
   text-shadow: 2px 2px 2px powderblue;
 }
 .form-container{
-     border: 10px solid;
+     border: 5px solid;
     border-image: url('border.jpg') 30 round;
     padding: 20px;
 }
