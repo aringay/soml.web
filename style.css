@@ -206,13 +206,12 @@ footer {
     .dropdown:hover .dropdown-content {
         display: block;
     }
-
-#contact {
-    border: 10px solid;
-    border-image: url('/images/border.jpg') 30 round;
-    padding: 20px;
-}
 .article-section h2{
   color:lightblue;
   text-shadow: 2px 2px 2px powderblue;
+}
+.form-container{
+     border: 10px solid;
+    border-image: url('border.jpg') 30 round;
+    padding: 20px;
 }
