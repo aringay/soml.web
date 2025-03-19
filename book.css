@@ -1,0 +1,187 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #2a2a2a;
+  color: ghostwhite;
+  padding: 20px;
+}
+
+/* Navigation */
+header nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Main Content Sections */
+.content-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.background-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  display: inline-block;
+  max-width: 800px;
+  margin: 0 auto;
+  background-image: url(/images/168721.jpg);
+  background-position: right bottom, left top;
+  background-repeat: no-repeat, repeat;
+  padding: 15px;
+  opacity: 100%;
+}
+
+
+h1, h3 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Book Cover */
+.book-cover {
+  margin-bottom: 20px;
+}
+
+.book-cover img {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  display: block;
+  border-radius: 20px;
+  background: dimgray;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  float:left;
+}
+
+/* Hidden Details */
+.hidden-details {
+  display: none;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #bbb;
+}
+
+/* Show Details on Button Click */
+nav .nav-button.active + .hidden-details {
+  display: block;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  background-color: #333;
+  padding: 20px;
+}
+
+.footer-links button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* Forms Overlay */
+.form-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.form-container {
+  background-color: #444;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.form-container h2 {
+  margin-bottom: 20px;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #555;
+}
+
+.form-container button {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  .content-section {
+    padding: 40px 20px;
+  }
+}

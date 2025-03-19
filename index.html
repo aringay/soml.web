@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Story of My Life</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fas fa-book"></i> Story of My Life
+            </div>
+            
+    </div>
+    <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#articles">Memories</a>
+        <div class="dropdown">
+            <a href="#" class="dropbtn">Favorites</a>
+            <div class="dropdown-content">
+                <a href="/book.html">Books</a>
+                <a href="/favorites-movies.html">Movies</a>
+                <a href="/favorites-music.html">Music</a>
+                <a href="/favorites-hobbies.html">Hobbies</a>
+            </div>
+        </div>
+        <a href="#contact">Contact</a>
+    </div>
+            
+            
+            
+            <div class="search-container">
+                <input type="text" id="search" placeholder="Search stories..." onkeyup="filterArticles()">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="hero">
+            <h1>Story of My Life</h1>
+            <p>A collection of personal experiences and unforgettable moments.</p>
+        </section>
+
+        <section id="articles" class="article-section">
+            <h2>Featured Stories</h2>
+            <div class="article-grid" id="articleGrid">
+                <div class="article-card">
+                    <img src="/images/c1.jpg" alt="Childhood Memories">
+                    <h3>My Childhood Adventures</h3>
+                    <p class="summary">A look back at the carefree days of youth.</p>
+                    <p class="details hidden">From playing in the backyard to going up in the mountain to look up nature views and take pictures most of the time </p>
+                    <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+                </div>
+                <div class="article-card">
+                    <img src="/images/c2.jpeg" alt="Life Journey">
+                    <h3>My Childhood Adventures </h3>
+                    <p class="summary">Cousin and family night out bond..</p>
+                    <p class="details hidden">A child's night weekend night going out with the whole family, usually playing in the park without worries..</p>
+                    <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+                </div>
+                <div class="article-card">
+                    <img src="/images/c3.jpeg" alt="Love Story">
+                    <h3>My Childhood Adventures </h3>
+                    <p class="summary">When you age and you change a bit of place to go.</p>
+                    <p class="details hidden">One of the weekend getaways with cousins, relaxing and going out without parents around.</p>
+                    <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+                </div>
+            </div>
+        </section>
+        
+     <div class="article-grid" id="article-grid">
+                <div class="article-card">
+                    <img src="/images/fm.jpg" alt="Childhood Memories">
+                    <h3> Fleeting Moment </h3>
+                    <p class="summary">That fleeting moment...</p>
+                    <p class="details hidden">    Rare moments,I thought it would never happen someday but, when you age you changed your priority and seldom meets with your family. </p>
+                   <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+                </div>
+                <div class="article-card">
+                    <img src="/images/sfd.jpeg" alt="Life Journey">
+                    <h3>The Journey to Self-Discovery</h3>
+                    <p class="summary">Finding my passion and purpose in life.</p>
+                    <p class="details hidden">Life is full of twists and turns, and through each experience, I want to learn more and know my self...</p>
+                    <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+                </div>
+                <div class="article-card">
+                    <img src="/images/s.jpeg" alt="Love Story">
+                    <h3>Sundate's</h3>
+                    <p class="summary">Memories you nake in church day..</p>
+                    <p class="details hidden">Moments like this, it not always about us and the likes although when we make time we make sure it's worth..</p>
+                    <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        
+             <div class="article-grid" id="article-grid">
+                <div class="article-card">
+                    <img src="/images/fam.png" alt="Childhood Memories">
+                    <h3>Family Adventures</h3>
+                    <p class="summary">A Family like this..</p>
+                    <p class="details hidden">This is the dream, the one's that makes you who you are...</p>
+                    <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+                </div>
+                <div class="article-card">
+                    <img src="/images/sis.png" alt="Life Journey">
+                    <h3>Sister Moments</h3>
+                    <p class="summary">You can be enemy with anyone but not with your sister's...</p>
+                    <p class="details hidden">Sister's who's got behind your back...</p>
+                    <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+                </div>
+                <div class="article-card">
+                    <img src="/images/love.png" alt="Love Story">
+                    <h3>My Love Story </h3>
+                    <p class="summary">The moment I met the one who changed everything.</p>
+                    <p class="details hidden">When you least expect God will give you someone that will treasure and commit to you..</p>
+                    <button class="read-more" onclick="toggleDetails(this)">Read More</button>
+                </div>
+            </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+     
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="form-container">
+                <h3>Get in Touch</h3>
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About This Site</h4>
+                <p>A space to share life’s unforgettable stories.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#articles">Memories</a></li>
+                    <li><a href="/favorites.html">Favorites</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Me</h4>
+                <p>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </p>
+            </div>
+        </div>
+        <p class="footer-bottom">© 2025 Story of My Life</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
